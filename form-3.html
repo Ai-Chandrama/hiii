@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering with Transform</title>
+    <style>
+        .container {
+            color: white;
+            background-color: #3c3ab6;
+            width: 500px; 
+            height: 500px;
+            position: relative;
+            border: 2px solid black; 
+        }
+
+        .Logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%;
+            background-color: rgb(145, 197, 152); 
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            transform: translate(0%, 0%);
+        }
+
+        .Logo img {
+            width: 60px; 
+            height: 60px; 
+        }
+
+        .photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3065d8;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+            transform: translate(0%, 0%);
+        }
+
+        .photo img {
+            width: 60px; 
+            height: 60px; 
+        }
+
+        input {
+            color: white;
+            width: 100px;
+            padding: 5px;
+            border-radius: 10px 0 10px 0;
+            background-color: transparent;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        .name {
+            position: absolute;
+            bottom: 25%;
+            left: 3%;
+            transform: translate(0%, 0%);
+        }
+
+        .web {
+            position: absolute;
+            bottom: 16%;
+            left: 0.2%;
+            transform: translate(0%, 0%);
+        }
+
+        .phone {
+            position: absolute;
+            bottom: 7%;
+            left: 3%;
+            transform: translate(0%, 0%);
+        }
+
+        .Address {
+            position: absolute;
+            bottom: 16%;
+            left: 40%;
+            transform: translate(0%, 0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Logo"> 
+            <img src="Logo 00000.png" alt="logo" class="img-fluid">
+        </div>
+
+        <!-- Name Input -->
+        <div class="name">
+            <label for="name"> Name : </label>
+            <input type="text" id="name">
+        </div>
+
+        <!-- Website Input -->
+        <div class="web">
+            <label for="web"> Website : </label>
+            <input type="url" id="web">
+        </div>
+
+        <!-- Phone Input -->
+        <div class="phone">
+            <label for="phone"> Phone : </label>
+            <input type="number" id="phone">
+        </div>
+
+        <!-- Address Input -->
+        <div class="Address">
+            <label for="Address"> Address : </label>
+            <input type="text" id="Address">
+        </div>
+
+        <!-- Photo -->
+        <div class="photo"> 
+            <img src="LOGO ....2.jpg" alt="logo" class="img-fluid">
+        </div>
+    </div>
+</body>
+</html>
